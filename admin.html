@@ -232,7 +232,7 @@
                                 <button onClick={() => updateData('customActivities', data.customActivities.filter((_, i) => i !== idx))} className="p-2 text-red-400 hover:text-red-600 hover:bg-red-50 rounded-lg relative z-30 transition-colors"><Icons.Trash2 className="w-5 h-5" /></button>
                             </div>
                         ))}
-                        <button onClick={() => updateData('customActivities', [...data.customActivities, { name: '' }])} className="w-full flex items-center justify-center space-x-2 text-blue-600 bg-white/60 hover:bg-blue-50/90 p-3 rounded-xl text-lg font-black border-2 border-dashed border-blue-400 transition-all btn-hover-effect relative z-30 backdrop-blur-sm"><Icons.Plus className="w-5 h-5" /> <span>+ เพิ่มกิจกรรมใหม่</span></button>
+                        <button onClick={() => updateData('customActivities', [...data.customActivities, { name: '' }])} className="w-full flex items-center justify-center space-x-2 text-blue-600 bg-white/60 hover:bg-blue-50/90 p-3 rounded-xl text-lg font-black border-2 border-dashed border-blue-400 transition-all btn-hover-effect relative z-30 backdrop-blur-sm"><Icons.Plus className="w-5 h-5" /> <span>เพิ่มกิจกรรมใหม่</span></button>
                     </div>
                 </div>
             </div>
@@ -262,7 +262,7 @@
                                         <button onClick={() => updateData('customTradSports', data.customTradSports.filter((_, i) => i !== idx))} className="p-2 text-red-400 hover:text-red-600 hover:bg-red-50 rounded-lg relative z-30 transition-colors"><Icons.Trash2 className="w-5 h-5" /></button>
                                     </div>
                                 ))}
-                                <button onClick={() => updateData('customTradSports', [...data.customTradSports, { name: '' }])} className="w-full flex items-center justify-center space-x-2 text-orange-600 bg-white/60 hover:bg-orange-50/90 p-3 rounded-xl text-lg font-black border-2 border-dashed border-orange-400 transition-all btn-hover-effect mt-2 relative z-30 backdrop-blur-sm"><Icons.Plus className="w-5 h-5" /> <span>+ เพิ่มกีฬาพื้นบ้านใหม่</span></button>
+                                <button onClick={() => updateData('customTradSports', [...data.customTradSports, { name: '' }])} className="w-full flex items-center justify-center space-x-2 text-orange-600 bg-white/60 hover:bg-orange-50/90 p-3 rounded-xl text-lg font-black border-2 border-dashed border-orange-400 transition-all btn-hover-effect mt-2 relative z-30 backdrop-blur-sm"><Icons.Plus className="w-5 h-5" /> <span>เพิ่มกีฬาพื้นบ้านใหม่</span></button>
                             </div>
                         </div>
                     )}
@@ -286,7 +286,7 @@
             );
             return (
                 <div className="max-w-5xl mx-auto w-full bg-white/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/50 overflow-hidden relative">
-                    <div className="bg-indigo-900/90 backdrop-blur-md p-4 md:p-5 text-white flex justify-between items-end relative z-20"><div className="flex items-center space-x-3"><div className="bg-white/20 p-2.5 rounded-lg backdrop-blur-sm"><Icons.Users className="w-6 h-6"/></div><h2 className="text-xl md:text-2xl font-extrabold drop-shadow-md">ประเภทกีฬาสากล (18 ประเภท)</h2></div><p className="text-indigo-200 text-xs md:text-sm font-medium bg-black/30 px-3 py-1.5 rounded-full backdrop-blur-md shadow-inner border border-white/10 hidden md:block">* คลิกที่ตัวเลขเพื่อแก้ไขอายุ</p></div>
+                    <div className="bg-indigo-900/90 backdrop-blur-md p-4 md:p-5 text-white flex justify-between items-end relative z-20"><div className="flex items-center space-x-3"><div className="bg-white/20 p-2.5 rounded-lg backdrop-blur-sm"><Icons.Users className="w-6 h-6"/></div><h2 className="text-xl md:text-2xl font-extrabold drop-shadow-md">ประเภทกีฬาสากล</h2></div><p className="text-indigo-200 text-xs md:text-sm font-medium bg-black/30 px-3 py-1.5 rounded-full backdrop-blur-md shadow-inner border border-white/10 hidden md:block">* คลิกที่ตัวเลขเพื่อแก้ไขอายุ</p></div>
                     <div className="p-5 relative z-10"><div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2"><div className="space-y-2">{col1.map((sport, idx) => renderSportItem(sport, idx))}</div><div className="space-y-2">{col2.map((sport, idx) => renderSportItem(sport, 9 + idx))}</div></div></div>
                 </div>
             );
